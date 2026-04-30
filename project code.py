@@ -4,6 +4,8 @@ import ast
 arr_valid_states = [] 
 
 '''
+By: Caden Brannan, Logan Little, Manuel Cruz, and Brett Raheem 
+
 a readme.txt file containing all the info about software/applications, programming
 language used to complete the project,and how to compile and run your program in
 command line under Windows or Mac
