@@ -2,9 +2,11 @@ def parse_file(filename):
     with open(filename, 'r') as f:
         content = f.read()
 
-    content = content.replace(' ', '').replace('\n', '')
+    content = content.replace(' ', '').replace('\n', '') #Stripping all the whitespace
     return content
 
+
+#Function to strip the outer set of parenthesis
 def extract_tuple(s, startConfig):
     depth = 0
     for i in range(startConfig, len(s)):
@@ -14,7 +16,8 @@ def extract_tuple(s, startConfig):
             depth -= 1
             if depth == 0:
                 return s[startConfig+1:i], i
-            
+
+#Stripping inner parenthesis and saving the strings inside and returning them   
 def split_top_level(s):
     depth = 0
     current = ''
@@ -37,6 +40,7 @@ def split_top_level(s):
         items.append(current)
     return items
 
+#Using the parsed strings and forming a dictionary with key value pairs
 def get_nfa_data(filename):
     content = parse_file(filename)
     outer_content, _ = extract_tuple(content, 0)
