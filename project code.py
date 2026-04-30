@@ -5,32 +5,6 @@ arr_valid_states = []
 
 '''
 By: Caden Brannan, Logan Little, Manuel Cruz, and Brett Raheem 
-
-a readme.txt file containing all the info about software/applications, programming
-language used to complete the project,and how to compile and run your program in
-command line under Windows or Mac
-
-Software: Python 3.12.2
-Windows 10 build 10.0.19045 or newer.
-We assume that python is installed in the system and that you have both the source file and NFA text documents in known locations
-1) Open the command line in administrator mode. 
-2) Navigate to the folder which contains the source file
-3) Execute the script via "python "(sourcefile name).py"
-4) When prompted for the file name, include the entire file path and extention. 
-5) Program will function as intended. 
-
-
-
-
-
-
-Test cases: 
-1, reject a case which is too small. 
-01, test minimum case works. 
-101
-1101, pumping lemma test #1
-0000, stack test (Clearing)
-0111101, pumping lemma test #2
 '''
 
 
