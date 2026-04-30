@@ -1,3 +1,5 @@
+By: Caden Brannan, Logan Little, Manuel Cruz, and Brett Raheem 
+----
 Software: Python 3.12.2
 Windows 10 build 10.0.19045 or newer.
 We assume that python is installed in the system and that you have both the source file and NFA text documents in known locations
