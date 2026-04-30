@@ -129,6 +129,8 @@ def is_string_accepted(state, string, index, NFA):
 
 
     ## explore all possible sub paths from here forward.
+    ## this avoids the need for randomness but fulfils the NFA capability
+    ## somewhat like depth traversal in a graph. 
     for next_state in valid_states:
        if is_string_accepted(next_state, string, index + 1, NFA):
         return True
